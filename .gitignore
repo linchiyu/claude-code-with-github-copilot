@@ -1,0 +1,56 @@
+# Ignore environment files with secrets
+.env
+*.env.local
+
+# Ignore Claude Code settings
+.claude/settings.json
+
+# Ignore Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Ignore logs
+*.log
+logs/
+*.log.*
+
+# Ignore temporary files
+tmp/
+temp/
+*.tmp
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore OS files
+Thumbs.db
+desktop.ini
+
+# Ignore backup files
+*.bak
+*.backup
+*~
+
+# Keep example files
+!*.example
+!*.template
+
+.idea/*
