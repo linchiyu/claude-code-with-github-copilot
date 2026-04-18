@@ -1,0 +1,31 @@
+# Example configuration file for Claude Code settings
+# Copy this file to one of these locations:
+#   - Project-level: .claude/settings.json
+#   - User-level: ~/.claude/settings.json (Mac/Linux)
+#   - User-level: %USERPROFILE%\.claude\settings.json (Windows)
+
+{
+  "autoUpdatesChannel": "latest",
+  "env": {
+    # IMPORTANT: Replace with your actual UUID from litellm-keys.env
+    # Must match LITELLM_MASTER_KEY exactly!
+    "ANTHROPIC_AUTH_TOKEN": "litellm-550e8400-e29b-41d4-a716-446655440000",
+
+    # LiteLLM proxy URL (default port is 4000)
+    "ANTHROPIC_BASE_URL": "http://localhost:4000",
+
+    # Default model for main operations
+    # Options: gpt-5.4, claude-opus-4-5, claude-sonnet-4-5
+    "ANTHROPIC_MODEL": "claude-sonnet-4-5",
+
+    # Fast model for quick operations (file searches, etc.)
+    # Options: gpt-5.4, claude-sonnet-4-5
+    "ANTHROPIC_SMALL_FAST_MODEL": "gpt-5.4",
+
+    # Optional: Request timeout in milliseconds (default: 60000)
+    # "ANTHROPIC_TIMEOUT": "120000",
+
+    # Optional: Maximum retry attempts (default: 2)
+    # "ANTHROPIC_MAX_RETRIES": "3"
+  }
+}
